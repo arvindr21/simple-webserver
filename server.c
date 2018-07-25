@@ -23,6 +23,10 @@
 #define SORRY 43
 #define LOG   44
 
+#ifndef SIGCLD
+#   define SIGCLD SIGCHLD
+#endif
+
 struct {
 	char *ext;
 	char *filetype;
